@@ -22,6 +22,7 @@ bin/
 gen/
 */bin/
 */gen/
+.out
 
 # Gradle files
 .gradle/
