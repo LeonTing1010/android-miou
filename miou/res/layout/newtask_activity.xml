@@ -143,4 +143,11 @@
             android:text="测试次数" />
 
     </LinearLayout>
+    <ListView
+        android:id="@+id/test_plan_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@color/menu_border_gray"
+        android:dividerHeight="1dp" />
 </LinearLayout>

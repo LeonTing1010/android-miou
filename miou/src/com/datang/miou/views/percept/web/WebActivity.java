@@ -25,6 +25,8 @@ public class WebActivity extends ActivitySupport {
         super.onCreate(savedInstanceState);
         TextView mTitleTextView = (TextView) findViewById(R.id.app_title_value);
         mTitleTextView.setText("网页测试");
+        TextView mRight = (TextView) findViewById(R.id.app_title_right_txt);
+        mRight.setText("编辑");
         ImageView mBackButton = (ImageView) findViewById(R.id.app_title_left);
         mBackButton.setOnClickListener(new View.OnClickListener() {
 
