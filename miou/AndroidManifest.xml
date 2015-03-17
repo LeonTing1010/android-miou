@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.datang.miou"
     android:versionCode="1"
-    android:versionName="1.0">
+    android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -30,16 +30,17 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="XQDcDFGGnZeNMp2KaqEzyuIa" />
 
         <activity
             android:name=".views.StartActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -48,35 +49,38 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".views.gen.GenActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".views.MainActivity"></meta-data>
+                android:value=".views.MainActivity" >
+            </meta-data>
         </activity>
-        <activity android:name=".views.gen.ScriptSettingActivity">
+        <activity android:name=".views.gen.ScriptSettingActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".views.gen.GenActivity"></meta-data>
+                android:value=".views.gen.GenActivity" >
+            </meta-data>
         </activity>
-        <activity android:name=".views.gen.SignalDetailActivity"></activity>
-
+        <activity android:name=".views.gen.SignalDetailActivity" >
+        </activity>
         <activity
             android:name=".views.data.DataActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Tab"
-            android:windowSoftInputMode="stateHidden|adjustPan">
+            android:windowSoftInputMode="stateHidden|adjustPan" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".views.MainActivity"></meta-data>
+                android:value=".views.MainActivity" >
+            </meta-data>
         </activity>
-
         <activity
             android:name=".views.percept.PerceptionActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustPan">
+            android:windowSoftInputMode="stateHidden|adjustPan" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".views.MainActivity"></meta-data>
+                android:value=".views.MainActivity" >
+            </meta-data>
         </activity>
         <activity android:name=".widget.FileBrowserActivity" />
         <activity android:name=".views.data.NewPlanListActivity" />
@@ -85,6 +89,7 @@
         <activity android:name=".views.percept.test.TestActivity" />
         <activity android:name=".views.percept.voice.VoiceActivity" />
         <activity android:name=".views.percept.connect.ConnectActivity" />
+        <activity android:name=".views.percept.task.NewTaskActivity" />
     </application>
 
 </manifest>
