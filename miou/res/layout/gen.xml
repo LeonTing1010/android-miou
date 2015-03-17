@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+		<com.datang.miou.widget.AppTitle
+		android:id="@+id/gen_map_title" 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+		<LinearLayout 
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:weightSum="1" >
+		<TextView 
+		    android:layout_width="0dp"
+			android:layout_height="wrap_content" 
+			android:text="@string/gen_map_is_logging" 
+			android:layout_weight="0.25"
+			android:gravity="center"
+			android:layout_marginLeft="10dp" />
+		<ToggleButton 
+		    android:id="@+id/gen_map_log_toggleButton"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.25"
+		    android:layout_gravity="center" 
+			android:scaleX="0.8"
+			android:scaleY="0.8" />
+		<Button
+		    android:id="@+id/gen_map_start_button"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:text="@string/gen_map_start" 
+		    android:layout_weight="0.25"
+		    android:gravity="center" 
+			android:scaleX="0.8"
+			android:scaleY="0.8" />
+		<Button
+		    android:id="@+id/gen_map_review_button"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:text="@string/gen_map_review"
+		    android:layout_weight="0.25"
+		    android:gravity="center" 
+			android:scaleX="0.8"
+			android:scaleY="0.8" />
+	</LinearLayout>
+	<FrameLayout android:id="@+id/gen_realtabcontent"
+		android:layout_width="match_parent" android:layout_height="0dip"
+		android:layout_weight="1" />
+	<android.support.v4.app.FragmentTabHost
+		android:id="@+id/gen_tabhost" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:background="#333333">
+		<FrameLayout android:id="@+id/gen_tabcontent"
+			android:layout_width="0dp" android:layout_height="0dp"
+			android:layout_weight="0" />
+	</android.support.v4.app.FragmentTabHost>
+</LinearLayout>

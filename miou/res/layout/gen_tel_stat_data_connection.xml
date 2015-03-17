@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TableLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:stretchColumns="*" 
+    android:background="@color/menu_border_gray">
+    <TableRow android:background="@color/white" android:layout_margin="0.5dp">
+        <TextView android:text="数据业务连接成功率" android:layout_span="4" android:gravity="center" ></TextView>
+    </TableRow>
+	<TableRow android:background="@color/table_background" android:layout_marginLeft="0.5dp" android:layout_marginRight="0.5dp">
+	    <TextView android:gravity="center" android:text="指标" ></TextView>
+        <TableLayout
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_span="3"
+    		android:stretchColumns="*" 
+    		android:background="@color/menu_border_gray">
+            <TableRow android:background="@color/white" >
+                <TextView android:text="网络" android:background="@color/table_background" android:layout_marginLeft="0.5dp" android:layout_marginRight="0.5dp"  android:layout_marginBottom="0.5dp" android:layout_span="3" android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow android:background="@color/white" >
+                <TextView android:text="LTE" android:background="@color/table_background" android:layout_marginLeft="0.5dp" android:layout_marginRight="0.5dp" android:gravity="center"></TextView>
+		        <TextView android:text="TD" android:background="@color/table_background" android:layout_marginRight="0.5dp" android:gravity="center"></TextView>
+		        <TextView android:text="GSM" android:background="@color/table_background" android:layout_marginRight="0.5dp" android:gravity="center"></TextView>
+            </TableRow>
+        </TableLayout>
+	</TableRow>
+	<TableRow android:background="@color/white" android:layout_marginLeft="0.5dp" android:layout_marginRight="0.5dp">
+	    <TextView android:text="附着成功率" android:gravity="center"></TextView>
+        <TextView android:gravity="center"></TextView>
+        <TextView android:gravity="center"></TextView>
+        <TextView android:gravity="center"></TextView>
+	</TableRow>
+	<TableRow android:background="@color/white" android:layout_marginLeft="0.5dp" android:layout_marginRight="0.5dp">
+	    <TextView android:text="平均附着时间" android:gravity="center" android:background="@color/table_background" android:layout_marginRight="0.5dp"></TextView>
+        <TextView android:gravity="center" android:background="@color/table_background" android:layout_marginRight="0.5dp"></TextView>
+        <TextView android:gravity="center" android:background="@color/table_background" android:layout_marginRight="0.5dp"></TextView>
+        <TextView android:gravity="center" android:background="@color/table_background"></TextView>
+	</TableRow>
+	<TableRow android:background="@color/white" android:layout_marginLeft="0.5dp" android:layout_marginRight="0.5dp">
+	    <TextView android:text="PDP激活成功率" android:gravity="center"></TextView>
+        <TextView android:gravity="center"></TextView>
+        <TextView android:gravity="center"></TextView>
+        <TextView android:gravity="center"></TextView>
+	</TableRow>
+	<TableRow android:background="@color/white" android:layout_marginLeft="0.5dp" android:layout_marginRight="0.5dp">
+	    <TextView android:text="PDP平均激活时间" android:background="@color/table_background" android:layout_marginRight="0.5dp" android:gravity="center"></TextView>
+        <TextView android:gravity="center" android:background="@color/table_background" android:layout_marginRight="0.5dp"></TextView>
+        <TextView android:gravity="center" android:background="@color/table_background" android:layout_marginRight="0.5dp"></TextView>
+        <TextView android:gravity="center" android:background="@color/table_background"></TextView>
+	</TableRow>
+	<TableRow android:background="@color/white" android:layout_marginLeft="0.5dp" android:layout_marginRight="0.5dp" android:layout_marginBottom="0.5dp">
+	    <TextView android:text="PING" android:gravity="center"></TextView>
+        <TextView android:gravity="center"></TextView>
+        <TextView android:gravity="center"></TextView>
+        <TextView android:gravity="center"></TextView>
+	</TableRow>
+</TableLayout>
+</LinearLayout>

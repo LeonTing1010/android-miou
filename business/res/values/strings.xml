@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">business</string>
+    <string name="MIOUServerUrl">https://MIOU.googleplex.com</string>
+    <string name="ping_executable">/system/bin/ping</string>
+    <string name="user_agent">Linux; Android</string>
+    <string name="default_user_agent">"MIOU-1.0 (Linux; Android)"</string>
+    <string name="batteryMinThresPrefKey">KEY_BATTERY_THRES</string>
+    <string name="checkinIntervalPrefKey">KEY_CHEKCEDIN_INTERVAL</string>
+    <string name="notificationSchedulerStarted">MIOU service has started</string>
+    <string name="notificatioContent">MIOU service is running</string>
+</resources>

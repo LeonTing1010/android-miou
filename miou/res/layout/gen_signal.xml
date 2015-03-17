@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:weightSum="1">
+  <RelativeLayout 
+        android:orientation="vertical"
+  		android:layout_width="match_parent"
+  		android:layout_height="match_parent"
+		android:layout_weight="0.5">
+		  <TextView
+		      android:layout_width="match_parent"
+		      android:layout_height="wrap_content"
+		      android:background="@color/menu_border_gray"
+		      android:gravity="center"
+		      android:text="事件" 
+		      android:layout_alignParentTop="true"
+      		  android:id="@+id/event_textView" />
+		
+		  <RelativeLayout 
+		      android:layout_width="match_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_below="@id/event_textView"
+      	      android:id="@+id/search_event_layout" 
+      	      android:layout_margin="10dp" >
+		      <EditText 
+		          android:layout_toLeftOf="@+id/search_event_ImageButton"    
+		      	  android:layout_width="match_parent"
+		      	  android:layout_height="wrap_content" 
+		      	  android:id="@+id/search_event_editText" ></EditText>
+		      <ImageButton
+		          android:id="@id/search_event_ImageButton"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_alignParentRight="true"
+		          android:src="@android:drawable/ic_menu_search"/>
+		  </RelativeLayout>
+		
+		  <ListView
+		      android:id="@+id/event_listView"
+		      android:layout_width="match_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_alignParentBottom="true"
+      		  android:layout_below="@id/search_event_layout"
+      		  android:layout_marginLeft="10dp"
+      		  android:layout_marginRight="10dp" >
+		  </ListView>
+  </RelativeLayout>
+  
+  <RelativeLayout 
+  		android:layout_width="match_parent"
+  		android:layout_height="match_parent"
+		android:layout_weight="0.5">
+    <TextView 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="信令"
+      android:gravity="center"
+      android:background="@color/menu_border_gray" 
+      android:layout_alignParentTop="true"
+      android:id="@+id/signal_textView" />
+  	<RelativeLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/signal_textView"
+      android:id="@+id/search_signal_layout"
+      android:layout_margin="10dp" >
+      <EditText 
+          android:layout_toLeftOf="@+id/search_signal_ImageButton"    
+      	  android:layout_width="match_parent"
+      	  android:layout_height="wrap_content"
+      	  android:id="@+id/search_signal_editText" >
+          
+      </EditText>
+      <ImageButton
+          android:id="@id/search_signal_ImageButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:src="@android:drawable/ic_menu_search"/>
+  	</RelativeLayout>
+
+  <ListView
+      android:id="@+id/signal_listView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_below="@id/search_signal_layout"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp" >  
+  </ListView>
+  </RelativeLayout>
+</LinearLayout>

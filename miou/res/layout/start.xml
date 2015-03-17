@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="@drawable/start_bg">
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+		android:layout_centerInParent="true">
+		<TextView android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:background="@color/dialog_title_blue"
+			android:text="注册信息" android:paddingTop="10dp" android:paddingLeft="10dp"
+			android:paddingBottom="10dp" android:textColor="@color/white" />
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:background="@color/white" android:padding="7dp">
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="手机IMEI" />
+				<EditText android:id="@+id/start_txt_imei"
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:inputType="number" android:layout_marginLeft="5dp" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal"
+				android:layout_marginTop="5dp">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="邮箱地址" />
+				<EditText android:id="@+id/start_txt_email"
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:inputType="textEmailAddress" android:layout_marginLeft="5dp" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal"
+				android:layout_marginTop="5dp">
+				<Button android:id="@+id/start_btn_ok" android:layout_width="match_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:text="确定" android:background="@color/title_blue"
+					android:textColor="@color/white" android:paddingTop="8dp"
+					android:paddingBottom="8dp" android:textSize="16sp" />
+				<Button android:id="@+id/start_btn_cancel"
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:layout_weight="1" android:text="取消"
+					android:layout_marginLeft="5dp" android:background="@color/button_green"
+					android:textColor="@color/white" android:paddingTop="8dp"
+					android:paddingBottom="8dp" android:textSize="16sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

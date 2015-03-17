@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="testtype">
+        <item>空闲测试</item>
+        <item>语音测试</item>
+        <item>VOLTE测试</item>
+        <item>视频测试</item>
+        <item>PING测试</item>
+        <item>PDP测试</item>
+        <item>ATTACH测试</item>
+        <item>FTP上传下载</item>
+        <item>邮件发送</item>
+        <item>邮件接收</item>
+        <item>邮件自发自收</item>
+        <item>短信发送</item>
+        <item>短信接收</item>
+        <item>短信自发自收</item>
+        <item>WAP下载</item>
+        <item>流媒体测试</item>
+    </string-array>
+</resources>

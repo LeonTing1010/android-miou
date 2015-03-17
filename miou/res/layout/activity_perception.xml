@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/maintab_root"
+    android:background="@color/menu_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.datang.miou.widget.AppTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/maintab_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/maintab_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/title_blue"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/maintab_tab_home"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="2dip"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:gravity="center"
+            android:text="@string/page_onekey"
+            android:textColor="@drawable/textcolor_tab_selector" />
+
+        <RadioButton
+            android:id="@+id/maintab_tab_search"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="2dip"
+            android:drawableTop="@drawable/tab_search_selector"
+            android:gravity="center"
+            android:text="@string/page_task"
+            android:textColor="@drawable/textcolor_tab_selector" />
+
+        <RadioButton
+            android:id="@+id/maintab_tab_account"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="2dip"
+            android:drawableTop="@drawable/tab_account_selector"
+            android:gravity="center"
+            android:text="@string/page_result"
+            android:textColor="@drawable/textcolor_tab_selector" />
+
+        <RadioButton
+            android:id="@+id/maintab_tab_more"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="2dip"
+            android:drawableTop="@drawable/tab_more_selector"
+            android:gravity="center"
+            android:text="@string/page_signal"
+            android:textColor="@drawable/textcolor_tab_selector" />
+    </RadioGroup>
+
+</LinearLayout>

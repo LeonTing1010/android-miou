@@ -1,0 +1,49 @@
+<resources>
+
+    <color name="custom_theme_color">@color/white</color>
+
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/custom_theme_color</item>
+        <item name="android:colorBackground">@color/custom_theme_color</item>
+
+    </style>
+
+    <style name="Theme.Tab" parent="android:Theme.Holo">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabIndicator</item>
+        <item name="android:textColor">@color/black_text</item>
+
+    </style>
+
+    <style name="Widget.TabIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:textAppearance">@style/TextAppearance.Tab</item>
+    </style>
+
+    <style name="TextAppearance.Tab" parent="TextAppearance.TabPageIndicator">
+        <item name="android:textColor">@color/white_theme</item>
+    </style>
+
+
+    <style name="BgLeftButton" parent="android:Widget.Button">
+        <item name="android:textColor">@color/radio_text_color</item>
+        <item name="android:background">@drawable/half_left</item>
+    </style>
+
+    <style name="BgMidButton" parent="android:Widget.Button">
+        <item name="android:textColor">@color/radio_text_color</item>
+        <item name="android:background">@drawable/half_mid</item>
+    </style>
+
+    <style name="BgRightButton" parent="android:Widget.Button">
+        <item name="android:textColor">@color/radio_text_color</item>
+        <item name="android:background">@drawable/half_right</item>
+    </style>
+
+    <style name="BgButton" parent="android:Widget.Button">
+        <item name="android:textColor">@color/btn_text_color</item>
+        <item name="android:background">@drawable/normal_btn</item>
+    </style>
+
+
+
+</resources>

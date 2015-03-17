@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <TableLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:id="@+id/vogsm_info_table"
+	        android:stretchColumns="*" 
+	        android:layout_margin="10dp"
+	        android:background="@color/menu_border_gray">
+	        <TableRow 
+	            android:gravity="center"
+	            android:background="@color/white"
+	            android:layout_marginTop="0.5dp" 
+	            android:layout_marginLeft="0.5dp"
+	            android:layout_marginRight="0.5dp"
+	            android:layout_marginBottom="0.5dp" >
+	            <TextView 
+	                android:text="GSM语音指标"
+	                android:gravity="center"></TextView>
+	        </TableRow>
+	        
+	</TableLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name">miou</string>
+	<string name="gen_map_start">开始</string>
+	<string name="gen_map_stop">停止</string>
+	<string name="gen_map_review">回放</string>
+	<string name="gen_map_is_logging">是否记录日志</string>
+	<string name="gen_map_title">通用测试</string>
+	<string name="gen_map_signal_detail_title">层三详细解码</string>
+	<string name="gen_map_title_script_button">脚本</string>
+	<string name="gen_map_title_export_button">导出</string>
+	<string name="dialog_label_info_title">请输入标注信息</string>
+	<string name="dialog_log_picker">选择日志</string>	
+	<string name="add_testing_plan">添加</string>
+	<string name="delete_testing_plan">删除</string>
+	<string name="gen_script_title">测试脚本设置</string>
+	<string name="gen_script_save_button">保存</string>
+	<string name="increase">+</string>
+	<string name="decrease">-</string>
+	<string name="cell_info">服务小区和邻小区信息</string>
+	<string name="params">指标呈现</string>
+
+    <string name="page_onekey">一键测试</string>
+    <string name="page_task">任务测试</string>
+    <string name="page_result">测试结果</string>
+    <string name="page_signal">信令回溯</string>
+</resources>

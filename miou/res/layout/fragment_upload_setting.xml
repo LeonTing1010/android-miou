@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu_gray"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:text="上传网络" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_default_btn"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_wifi"
+                    style="@style/BgLeftButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="仅wifi" />
+
+                <RadioButton
+                    android:id="@+id/btn_3g"
+                    style="@style/BgMidButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="仅3G" />
+
+                <RadioButton
+                    android:id="@+id/btn_any"
+                    style="@style/BgRightButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="无限制" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="FLEET" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="IP" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp" />
+
+        </TableRow>
+
+        <TextView
+            android:layout_height="1dp"
+            android:background="@color/menu_gray" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="PORT" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp" />
+
+        </TableRow>
+
+
+        <TextView
+            android:layout_height="1dp"
+            android:background="@color/menu_gray" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="目录" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="数据" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="数据上传开启" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp" />
+
+        </TableRow>
+
+        <TextView
+            android:layout_height="1dp"
+            android:background="@color/menu_gray" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="全部数据上传" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp" />
+
+        </TableRow>
+
+
+        <TextView
+            android:layout_height="1dp"
+            android:background="@color/menu_gray" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="数据存储路径" />
+
+            <EditText android:id="@+id/choose_file"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp" />
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_bar_height"
+    android:background="@color/menu_gray"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="任务名称"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_create_time"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="创建时间"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_creator_id"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="最后一次执行时间"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_modified_time"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="状态"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_exed_num"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="执行中"
+        android:textSize="10sp" />
+
+
+</LinearLayout>

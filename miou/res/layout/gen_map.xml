@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:weightSum="1" >
+
+	<com.datang.miou.widget.BaiduMapView
+		android:id="@+id/gen_map_view" 
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_alignParentTop="true"
+		android:layout_above="@+id/check_box_group"
+		android:layout_weight="0.9" />
+	<HorizontalScrollView 
+	    android:id="@id/check_box_group"
+	    android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_alignParentBottom="true"
+		android:layout_weight="0.1" >
+	<LinearLayout 
+	    android:id="@id/check_box_group"
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentBottom="true" 
+		android:orientation="horizontal">
+	    <CheckBox 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleX="0.5"
+			android:scaleY="0.5"
+			android:text="基站显示"
+			android:id="@+id/box1" ></CheckBox>
+	    <CheckBox 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleX="0.5"
+			android:scaleY="0.5"
+			android:text="地图显示"
+			android:id="@+id/box2" ></CheckBox>
+	    <CheckBox 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleX="0.5"
+			android:scaleY="0.5"
+			android:text="轨迹显示"
+			android:id="@+id/box3" ></CheckBox>
+	    <CheckBox 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleX="0.5"
+			android:scaleY="0.5"
+			android:text="基站信息显示"
+			android:id="@+id/box3" ></CheckBox>
+	    <CheckBox 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleX="0.5"
+			android:scaleY="0.5"
+			android:text="连线显示"
+			android:id="@+id/box3" ></CheckBox>
+	</LinearLayout>
+	</HorizontalScrollView>
+</LinearLayout>

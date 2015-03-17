@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_margin="10dp">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:weightSum="1.0" 
+    android:layout_alignParentTop="true"
+    android:id="@+id/head_layout" >
+    
+    <TextView
+	    android:id="@+id/name_textView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.2"
+	    android:gravity="center"
+	    android:text="日志名称" >
+	</TextView>
+	<TextView
+	    android:id="@+id/path_textView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.2"
+	    android:gravity="center"
+	    android:text="路径" >
+	</TextView>
+
+	<TextView
+	    android:id="@+id/size_textView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.2"
+	    android:gravity="center" 
+	    android:text="大小" >
+	</TextView>
+
+
+	<TextView
+	    android:id="@+id/time_textView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.2"
+	    android:gravity="center" 
+	    android:text="测试时长" >
+	</TextView>
+	
+	<TextView
+	    android:id="@+id/exception_textView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.2"
+	    android:gravity="center" 
+	    android:text="有无异常事件" >
+	</TextView>
+
+</LinearLayout>
+    
+    <ListView 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:id="@+id/log_picker_listView" 
+    	android:layout_below="@id/head_layout"
+    	android:layout_alignParentBottom="true" ></ListView>
+
+</RelativeLayout>

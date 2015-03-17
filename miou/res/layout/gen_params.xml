@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:id="@+id/cell_info_layout" 
+  		android:orientation="vertical" >     
+    
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:text="@string/cell_info"
+	        android:id="@+id/cell_info_textView"
+	        android:gravity="center"
+	        android:background="#C8C8C8" >
+	        
+	    </TextView>	
+	    <TableLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:id="@+id/serving_cell_info_table"
+	        android:stretchColumns="*" 
+	        android:layout_margin="10dp"
+	        android:background="@color/menu_border_gray">
+	        <TableRow 
+	            android:gravity="center"
+	            android:background="@color/white"
+	            android:layout_marginTop="0.5dp" 
+	            android:layout_marginLeft="0.5dp"
+	            android:layout_marginRight="0.5dp"
+	            android:layout_marginBottom="0.5dp" >
+	            <TextView 
+	                android:text="Serving Cell Info"
+	                android:gravity="center"></TextView>
+	        </TableRow>
+	        
+	    </TableLayout>
+
+	    <TableLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:id="@+id/neighbor_cell_info_table"
+	        android:stretchColumns="*" 
+	        android:layout_margin="10dp"
+	        android:background="@color/menu_border_gray" >
+	    <TableRow 
+	            android:gravity="center"
+	            android:background="@color/white"
+	            android:layout_marginTop="0.5dp" 
+	            android:layout_marginLeft="0.5dp"
+	            android:layout_marginRight="0.5dp"
+	            android:layout_marginBottom="0.5dp" >
+	            <TextView 
+	                android:text="Neighbor Cell Info"
+	                android:gravity="center"></TextView>
+	        </TableRow>
+	    </TableLayout>
+	   	<TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:text="@string/params"
+	        android:gravity="center"
+	        android:background="#C8C8C8" >
+	        
+	    </TextView>
+    </LinearLayout>
+    
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/viewPager"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_above="@+id/viewGroup"
+	    android:layout_below="@id/cell_info_layout" >
+	    
+	</android.support.v4.view.ViewPager>
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@id/viewGroup"
+	    android:gravity="center_horizontal"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="horizontal" >    
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/indicator_1"
+	        android:text="1" >
+	    </TextView>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/indicator_2"
+	        android:text="2" > 
+	    </TextView>
+	    	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/indicator_3"
+	        android:text="3" >
+	    </TextView>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/indicator_4"
+	        android:text="4" > 
+	    </TextView>
+	   	<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/indicator_5"
+	        android:text="5" >
+	    </TextView>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/indicator_6"
+	        android:text="6" > 
+	    </TextView>
+	    	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/indicator_7"
+	        android:text="7" >
+	    </TextView>
+
+	</LinearLayout>
+	
+</RelativeLayout>
