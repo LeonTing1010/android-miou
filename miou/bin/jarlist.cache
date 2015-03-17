@@ -1,7 +1,0 @@
-# cache for current jar dependency. DO NOT EDIT.
-# format is <lastModified> <length> <SHA-1> <path>
-# Encoding is UTF-8
-1426565617700 7050 7c7ee63dabb2fa6436f652dde5a79d060ef8674b D:\Users\dingzhongchang\workspace\adc\libs\android-logging-log4j-1.0.2.jar
-1426565023126 7050 7c7ee63dabb2fa6436f652dde5a79d060ef8674b D:\Users\dingzhongchang\workspace\miou\libs\android-logging-log4j-1.0.2.jar
-1426565023182 481534 0278c9d0ae02132ab6d00e709926c227022e85a4 D:\Users\dingzhongchang\workspace\miou\libs\log4j-1.2.16.jar
-1426565617715 481534 0278c9d0ae02132ab6d00e709926c227022e85a4 D:\Users\dingzhongchang\workspace\adc\libs\log4j-1.2.16.jar
