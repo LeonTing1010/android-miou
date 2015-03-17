@@ -1,3 +1,7 @@
+#ignore .metadata
+.metadata
+.gitignore
+
 # Built application files
 *.apk
 *.ap_
