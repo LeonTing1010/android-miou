@@ -11,14 +11,14 @@
     <ImageView
         android:id="@+id/app_title_left"
         android:layout_width="@android:dimen/app_icon_size"
-        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/thumbnail_height"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:scaleType="center"
         android:src="@drawable/back" />
 
     <TextView
         android:id="@+id/app_title_value"
+        style="@android:style/TextAppearance.DeviceDefault.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -26,6 +26,7 @@
 
     <TextView
         android:id="@+id/app_title_right_txt"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"

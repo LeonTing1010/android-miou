@@ -27,7 +27,7 @@ public class NewTaskActivity extends ActivitySupport {
 	    protected void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
 	        TextView mTitleTextView = (TextView) findViewById(R.id.app_title_value);
-	        mTitleTextView.setText("连接测试");
+	        mTitleTextView.setText("新增任务");
 	        TextView mRight = (TextView) findViewById(R.id.app_title_right_txt);
 	        mRight.setText("完成");
 	        ImageView mBackButton = (ImageView) findViewById(R.id.app_title_left);
