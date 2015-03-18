@@ -79,14 +79,31 @@
         </activity>
         <activity android:name=".widget.FileBrowserActivity" />
         <activity android:name=".views.data.NewPlanListActivity" />
-        <activity android:name=".views.percept.web.WebActivity" />
-        <activity android:name=".views.percept.video.VideoActivity" />
-        <activity android:name=".views.percept.test.TestActivity" />
-        <activity android:name=".views.percept.voice.VoiceActivity" />
-        <activity android:name=".views.percept.connect.ConnectActivity" />
+        <activity
+            android:name=".views.percept.web.WebActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".views.percept.web.EditWebActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".views.percept.video.VideoActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".views.percept.test.TestActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".views.percept.voice.VoiceActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".views.percept.connect.ConnectActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".views.percept.connect.EditConnectActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
             android:name=".views.percept.task.NewTaskActivity"
             android:windowSoftInputMode="adjustPan|stateHidden" />
+
     </application>
 
 </manifest>

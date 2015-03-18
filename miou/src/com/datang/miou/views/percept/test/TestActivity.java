@@ -44,5 +44,6 @@ public class TestActivity extends ActivitySupport {
     @AfterView
     private void init() {
 
+
     }
 }

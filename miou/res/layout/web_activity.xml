@@ -27,4 +27,182 @@
             android:text="http://www.baidu.com" />
     </LinearLayout>
 
+
+    <com.datang.miou.widget.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center|top|left">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/connect"
+                android:gravity="center"
+                android:text="百度" />
+
+            <ProgressBar
+                android:id="@+id/pb_baidu"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:indeterminate="false"
+                android:progress="100"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
+            <TextView
+                android:id="@+id/baidu_divider"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/pb_baidu"
+                android:layout_centerInParent="true"
+                android:background="@drawable/triangle"
+                android:gravity="bottom" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/baidu_divider"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="速率:1M/s"
+                    android:textColor="@color/btn_text_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="耗时：5s"
+                    android:textColor="@color/btn_text_color" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/connect"
+                android:gravity="center"
+                android:text="移动" />
+
+            <ProgressBar
+                android:id="@+id/pb_mobile"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:indeterminate="false"
+                android:progress="100"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/connect"
+                android:gravity="center"
+                android:text="优酷" />
+
+            <ProgressBar
+                android:id="@+id/pb_youku"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:indeterminate="false"
+                android:progress="100"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/connect"
+                android:gravity="center"
+                android:text="腾讯" />
+
+            <ProgressBar
+                android:id="@+id/pb_tengxu"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:indeterminate="false"
+                android:progress="100"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/connect"
+                android:gravity="center"
+                android:text="新浪" />
+
+            <ProgressBar
+                android:id="@+id/pb_sina"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:indeterminate="false"
+                android:progress="100"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+        </RelativeLayout>
+
+    </com.datang.miou.widget.FlowLayout>
+
+    <Button
+        android:id="@+id/bt_web_ctl"
+        style="@style/TaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="停止测试" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="地址：上海陆家嘴" />
 </LinearLayout>

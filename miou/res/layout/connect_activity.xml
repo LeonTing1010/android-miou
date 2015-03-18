@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <com.datang.miou.widget.AppTitle
         android:id="@+id/gen_map_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/menu_gray"
+        android:orientation="vertical"
+        android:padding="15dp">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="共测试10个网页，平均时延10s,成功率100%，attach成功率100%,PDP成功率100%" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@color/menu_border_gray"
+        android:dividerHeight="1dp" />
+
+    <Button
+        android:id="@+id/bt_video_ctl"
+        style="@style/TaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="停止测试" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="地址：上海陆家嘴" />
 </LinearLayout>

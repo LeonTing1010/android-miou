@@ -17,33 +17,10 @@
         android:padding="15dp">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="HTTP 测试开始" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="http://www.baidu.com" />
-    </LinearLayout>
-
-    <VideoView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/menu_gray"
-        android:orientation="vertical"
-        android:padding="15dp">
-
-        <TextView
             style="@android:style/TextAppearance.DeviceDefault.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="测试视频选择"
+            android:text="目标URL"
             android:textStyle="bold" />
 
         <RelativeLayout
@@ -99,27 +76,37 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/bt_video_ok"
+                android:id="@+id/bt_web_add"
                 style="@style/TaskButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_alignBottom="@id/self_define_layout"
                 android:layout_toRightOf="@id/self_define_layout"
-                android:text="确定" />
+                android:text="添加" />
 
         </RelativeLayout>
 
 
     </LinearLayout>
 
+
+    <ListView
+        android:id="@+id/lv_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@color/menu_border_gray"
+        android:dividerHeight="1dp" />
+
     <Button
-        android:id="@+id/bt_video_ctl"
+        android:id="@+id/bt_del_web"
         style="@style/TaskButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:text="停止测试" />
+        android:text="删除测试网页" />
 
     <TextView
         android:layout_width="match_parent"
